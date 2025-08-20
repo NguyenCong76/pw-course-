@@ -59,47 +59,66 @@ Quy tắc viết message khi commit:
     - KHÔNG là các "từ khóa", tức là các từ đã có trong Javascript (ví dụ: var, let, for, if,...)
 
 - Ví dụ:
-    - var test = 10;
-    - let pw = "playwright";
+    ```js 
+    var test = 10;
+    let pw = "playwright";
+    ```
 
 - In ra giá trị của biến:
-    - console.log ("Giá trị biến test là: ", test)
+    ```js
+    console.log ("Giá trị biến test là: ", test)
+    ```
 
 - Khác nhau giữa khai báo "var" và "let":
-    - "var" khai báo lại được, còn "let" thì không.
-        - var item1 = "a"
-        - var item1 = "c"; // OK  
 
-        - let item2 = "b";
-        - let item2 = "d"; // error
+    - "var" khai báo lại được, còn "let" thì không.
+
+    ```js 
+    var item1 = "a"
+    var item1 = "c"; // OK  
+
+    let item2 = "b";
+    let item2 = "d"; // error
+    ```
+
     - Phạm vi của biến:
         - var: phạm vi toàn cục (global).
         - let: phạm vi trong cặp ngoặc {}.
+    
     - Nên dùng "let" vì dễ kiểm soát phạm vị của biến.
 
 2. Const: nghĩa hằng số, dùng để khai báo các giá trị không thể thay đổi.
-- Ví dụ: 
-    - const a = 10;
-    - const b = "K17_Playwright"
+    ```js
+    const a = 10;
+    const b = "K17_Playwright";
+    ```
 
 3. Data type: Kiểu dữ liệu
 - Có 8 loại kiểu dữ liệu trong JS: String; Number; Bigint, Boolean; Undefined; Null; Symbol; Object.
 - Đầu tiên quan tâm tới các kiểu dữ liệu:
     - String: dùng để khai báo giá trị là một chuỗi.
-        - VD: let srt = "Nguyen Cong";
+         ```js 
+         let srt = "Nguyen Cong"; 
+         ```
     - Number: dùng để khai báo giá trị một số.
-        - let num = "1000";
+        ```js 
+        let num = "1000";
+        ```
     - Boolean: dùng để khai báo giá trị kiểu đúng hoặc sai (true or false).
+        ```js
         - let bol = true;
+        ```
 
 4. Comparison operator (toán tử so sánh): dùng để so sánh giá trị giữa hai biến với nhau. Kết quả sẽ trả về Boolean (true hoặc false).
 - Các toán tử so sánh:
     - So sánh hơn kém: ">", "<".
     - So sánh bằng: "=="; "==="; "!="; "!=="; ">="; "<=".
     - Ví dụ:
-        - let a = "10";
-        - let b = "20";
-        - console.log (a>b); // false
+    ```js 
+        let a = "10";
+        let b = "20";
+        console.log (a > b); // false
+    ```
 
 5. Unary operator: toán tử một ngôi.
 - Dùng để tăng hoặc giảm giá trị
@@ -113,18 +132,22 @@ Quy tắc viết message khi commit:
 7. Conditional: nghĩa là điều kiện, dùng để kiểm tra có nên thực hiện một đoạn logic không.
 - Cú pháp: if (<điều kiên> ) { // code }
 - Ví dụ: Nếu biến a có giá trị lớn hơn biến b thì sẽ in ra kết quả "5 lớn hơn 3".
-    - let a = 5;
-    - let b = 3;
-    - if ( a > b) {
-        console.log ("5 lớn hơn 3")
-      }
+    ```js 
+        let a = 5;
+        let b = 3;
+        if ( a > b) {
+            console.log ("5 lớn hơn 3");
+        }
+    ```
 
 8. Loops: nghĩa là vòng lặp, dùng để thực hiện một đoạn logic một số lần nhất định.
 - Cú pháp: for (<khởi tạo>; <điều kiện chạy>; <điều kiện tăng>) { // code }
 - Ví dụ: Vòng lặp in ra các giá trị từ 1 đến 10.
-    - for (let i = 1; i <= 10; i++) {
+    ```js
+    for (let i = 1; i <= 10; i++) {
         console.log("Giá trị của i là: ", i)
       }
+    ```
 
 9. Format code: mục đích giúp code gọn gàng, dễ đọc và dễ bảo trì hơn.
 - Win: Alt + Shift + F
